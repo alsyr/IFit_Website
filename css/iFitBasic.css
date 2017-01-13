@@ -1,0 +1,218 @@
+/*
+   # Dark grey : #333543
+   # Fluo Green :; #dedc00
+   */
+
+/**
+ * Remove default margin.
+ */
+ body {
+ 	margin: 0;
+ }
+
+ /* ::: Links ::: */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+ a:focus {
+ 	outline: thin dotted;
+ }
+
+ a:active,
+ a:hover {
+ 	outline: 0;
+ }
+
+ /* ::: Typography ::: */
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+ small {
+ 	font-size: 80%;
+ }
+
+ /* ::: Embedded content ::: */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+ img {
+ 	border: 0;
+ }
+
+/* GENERAL (APPLIED TO ELEMENTS)
+------------------------------------------ */
+body {
+	font: 100%/1.2 "Myriad Pro", "Gill Sans", "Gill Sans MT", sans-serif;
+}
+
+h1 {
+	text-transform: lowercase;
+	color: #dedc00;
+	font-size: 2.5em;
+	font-weight: lighter;
+}
+
+li {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+
+/* CONTAINERS
+------------------------------------------ */
+
+.backBanner {
+	margin: 0 auto;
+	background: white;
+	clear: bottom;
+	top: 0%;
+	width: 100%;
+	padding-bottom: 4em;
+}
+
+.banner {
+	border-top: 6px solid #dedc00;
+	margin: 0 auto;
+	background: #333543;
+	clear: bottom;
+	position: fixed;
+	top: 0%;
+	width: 100%;
+	z-index : 1;
+}
+
+.inBanner {
+	margin: 0 auto;
+	width: 960px;
+}
+
+.page {
+	margin: 0 auto;
+	width: 960px;
+}
+
+.container {
+	padding-bottom: 1.9375em;
+}
+
+.main {
+	float: left;
+	padding-right: 2em;
+}
+
+/* MASTHEAD
+------------------------------------------ */
+.masthead {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	display: block;
+	position: relative;
+}
+
+.logo {
+	max-width: 5%;
+	max-height : auto;
+	margin-bottom: -8px;
+	margin-top: 0;
+}
+
+
+/* ::: Main Navigation ::: */
+.nav-main {
+	margin-bottom: 0;
+	padding: .45em 0 .5em;
+	position: absolute;
+	left: 150px;
+	top: 0px;
+}
+
+.nav-main li {
+	display: inline-block;
+	text-align: center;
+}
+
+.nav-main li:first-child{
+	border-left: none;
+	border-right:none;
+}
+
+.nav-main a {
+	color: white;
+	display: inline-block;
+	font-size: 1.125em; /* 18px/16px */
+	padding: 1em 1em .6em 1em;
+}
+
+.nav-main a:hover {
+	color: none;
+	text-decoration: none;
+	background-color: #dedc00;
+}
+
+.nav-main #current-page,
+.nav-main #current-page:hover {
+	color: gray;
+	background-color: #dedc00;
+	cursor: default;
+}
+
+/* MAIN CONTENT
+------------------------------------------ */
+.main > .post:first-child > h1 {
+	margin-top: 0.904em;
+}
+
+.programsButton {
+	-webkit-border-radius: 7;
+	-moz-border-radius: 7;
+	border-radius: 7px;
+	color: #ffffff;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	background: #dedc00;
+	padding: 20px;
+	text-decoration: none;
+	position: absolute;
+
+}
+
+.programsButton:hover {
+	color: #dedc00;
+	background: #333543;
+	text-decoration: none;
+}
+
+h1 {
+	margin-bottom: .4125em;
+}
+
+
+/* FOOTER
+------------------------------------------ */
+
+footer[role="contentinfo"]  p {
+	color: white;
+}
+
+footer[role="contentinfo"] {
+	color: white !important;
+	background: #333543;
+	padding: 0.313em 0.625em 0.625em;
+	border-top: 1px solid #cacbcb;
+	text-align: center;
+}
+
+
+
+/* html5boilerplate.com Clearfix
+--------------------------------- */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
