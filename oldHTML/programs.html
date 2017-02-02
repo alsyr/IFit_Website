@@ -1,76 +1,87 @@
-<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="UTF-8">
-<title>Programs | iFit - Our Mission: Your Health</title>
-<link rel="stylesheet" href="css/iFitBasic.css">
-<link rel="stylesheet" href="css/dropMenu.css">
-<link rel="stylesheet" href="css/jquery-ui.min.css">
-<style type="text/css">
-/* make default button size sane */
-.ui-state-default {
-	font-size: 20px;
-	font-weight: lighter;
-	color: #dedc00;
-	background-color: #fff;
-}
-</style>
-<style type="text/css">a {text-decoration: none}</style>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/jquery-ui.min.js"></script></head>
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <title>Programs | iFit - Our Mission: Your Health</title>
+  <link rel="stylesheet" href="css/iFitBasic.css">
+  <link rel="stylesheet" href="css/dropMenu.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <style type="text/css">
+    /* make default button size sane */
+    .ui-state-default {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #dedc00;
+    background-color: #fff;
+    }
+  </style>
+  <style type="text/css">a {text-decoration: none}</style>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+</head>
 <script type="text/javascript" src="js/programs.js"></script>
 
 
 <body>
-	<div class="container clearfix">
+<div class="container clearfix">
 
-		<div class="backBanner">
-			<header class="masthead" role="banner">
-				<p class="logo"><img src="./images_files/iFit Logo Banner.png"></p>
-			</header>
-		</div> <!-- end backgroundBanner -->
-		
-		<div class="banner">
-			<div class="inBanner">
-				<!-- ==== START MASTHEAD ==== -->
-				<header class="masthead" role="banner">
-					<p class="logo"><a href="home.html"><img src="./images_files/iFit Logo Banner.png"></a></p>
+  <div class="backBanner">
+    <header class="masthead" role="banner">
+      <p class="logo"><img src="./images_files/iFit Logo Banner.png"></p>
+    </header>
+  </div> <!-- end backgroundBanner -->
 
-					<nav role="navigation">
-						<ul class="nav-main">
-							<li><a href="home.html">Home</a></li>
-							<li><a href="login.html">Log In</a></li>
-							<li><a href="programs.html" class="current-page">Programs</a></li>
-							<li><a href="rates.html">Rates</a></li>
-							<li><a href="trainers.html">Our Trainers</a></li>
-							<li><a href="about.html">About</a></li>
-						</ul>
-					</nav>
-				</header>
-			</div> <!-- end InBanner -->
-		</div> <!-- end banner -->
+  <div class="banner">
+    <div class="inBanner">
+      <!-- ==== START MASTHEAD ==== -->
+      <header class="masthead" role="banner">
+        <p class="logo"><a href="home.html"><img src="./images_files/iFit Logo Banner.png"></a></p>
 
-		<div class="dropMenuOption">
-			<h1>Members' coach</h1>
-			<h3>
-				People trained by &nbsp;
-				<select id="trainermenu"></select>
-			</h3>
-			<div id="output"></div>
+        <nav role="navigation">
+          <ul class="nav-main">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="programs.html" class="current-page">Programs</a></li>
+            <li><a href="rates.html">Rates</a></li>
+            <li><a href="trainers.html">Our Trainers</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div> <!-- end InBanner -->
+  </div> <!-- end banner -->
 
-			<h1>Exercises that should be done by a particular member and his/her weight status</h1>
-			<h3>
-				Exercises that should be done by &nbsp;
-				<select id="exercisemenu"></select>
-			</h3>
-			<div id="output2"></div>
-		</div>
-	</div>
-	<!-- end container -->
+  <div class="dropMenuOption">
+    <h1>Members' coach</h1>
 
-	<!-- ==== START PAGE FOOTER ==== -->
-	<footer role="contentinfo" class="footer">
-		<p class="legal1"><small>© 2015 iFit. All Rights Reserved. - Photos used under Creative Commons from fringedbenefit, RAWOPTIX, osseous</small></p>
-	</footer>
-	<!-- end page footer -->
+    <h3>
+      People trained by &nbsp;
+      <select id="trainermenu"></select>
+    </h3>
+
+    <div id="output"></div>
+
+    <h1>Exercises that should be done by a particular member and his/her weight status</h1>
+
+    <h3>
+      Exercises that should be done by &nbsp;
+      <select id="exercisemenu"></select>
+    </h3>
+
+    <div id="output2"></div>
+  </div>
+</div>
+<!-- end container -->
+
+<!-- ==== START PAGE FOOTER ==== -->
+<footer role="contentinfo" class="footer">
+  <p class="legal1">
+    <small>© 2015 iFit. All Rights Reserved. - Photos used under Creative Commons from
+      fringedbenefit, RAWOPTIX, osseous
+    </small>
+  </p>
+</footer>
+<!-- end page footer -->
 
 </div> <!-- end page -->
 

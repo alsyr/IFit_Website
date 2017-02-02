@@ -1,81 +1,89 @@
-<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="UTF-8">
-<title>Programs | iFit - Our Mission: Your Health</title>
-<link rel="stylesheet" href="css/iFitBasic.css">
-<style type="text/css">a {text-decoration: none}</style></head>
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <title>Programs | iFit - Our Mission: Your Health</title>
+  <link rel="stylesheet" href="css/iFitBasic.css">
+  <style type="text/css">a {text-decoration: none}</style>
+</head>
 
 <body>
-	<div class="container clearfix">
+<div class="container clearfix">
 
-		<div class="backBanner">
-			<header class="masthead" role="banner">
-				<p class="logo"><img src="./images_files/iFit Logo Banner.png"></p>
-			</header>
-		</div> <!-- end backgroundBanner -->
-		
-		<div class="banner">
-			<div class="inBanner">
-				<!-- ==== START MASTHEAD ==== -->
-				<header class="masthead" role="banner">
-					<p class="logo"><a href="home.html"><img src="./images_files/iFit Logo Banner.png"></a></p>
+  <div class="backBanner">
+    <header class="masthead" role="banner">
+      <p class="logo"><img src="./images_files/iFit Logo Banner.png"></p>
+    </header>
+  </div> <!-- end backgroundBanner -->
 
-					<nav role="navigation">
-						<ul class="nav-main">
-							<li><a href="home.html">Home</a></li>
-							<li><a href="login.html">Log In</a></li>
-							<li><a href="programs.html" class="current-page">Programs</a></li>
-							<li><a href="rates.html">Rates</a></li>
-							<li><a href="trainers.html">Our Trainers</a></li>
-							<li><a href="about.html">About</a></li>
-						</ul>
-					</nav>
-				</header>
-			</div> <!-- end InBanner -->
-		</div> <!-- end banner -->
+  <div class="banner">
+    <div class="inBanner">
+      <!-- ==== START MASTHEAD ==== -->
+      <header class="masthead" role="banner">
+        <p class="logo"><a href="home.html"><img src="./images_files/iFit Logo Banner.png"></a></p>
 
-
-		<form action="php/queryDBMembers.php" method="get">
-
-			<fieldset>
-				<legend>Which Trainer? (Jackson, Grande, Swift, Bieber)</legend>
-
-				<p>
-					<label>Trainer's last name: </label>
-					<input name="last" type="text">
-				</p>
-				
-				<p>
-					<input type="submit" value="Submit">
-				</p>
-			</fieldset>
-		</form>
-
-		<form action="php/queryDBExercise.php" method="get">
-
-			<fieldset>
-				<legend>What Exercises should be done by a particular member and what is his/her weight status </legend>
-
-				<p>
-					<label>Member's id: </label>
-					<input name="id" type="text">
-				</p>
-				
-				<p>
-					<input type="submit" value="Submit">
-				</p>
-			</fieldset>
-		</form>
+        <nav role="navigation">
+          <ul class="nav-main">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="programs.html" class="current-page">Programs</a></li>
+            <li><a href="rates.html">Rates</a></li>
+            <li><a href="trainers.html">Our Trainers</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div> <!-- end InBanner -->
+  </div> <!-- end banner -->
 
 
+  <form action="php/queryDBMembers.php" method="get">
 
-	</div>
-	<!-- end container -->
+    <fieldset>
+      <legend>Which Trainer? (Jackson, Grande, Swift, Bieber)</legend>
 
-	<!-- ==== START PAGE FOOTER ==== -->
-	<footer role="contentinfo" class="footer">
-		<p class="legal1"><small>© 2015 iFit. All Rights Reserved. - Photos used under Creative Commons from fringedbenefit, RAWOPTIX, osseous</small></p>
-	</footer>
-	<!-- end page footer -->
+      <p>
+        <label>Trainer's last name: </label>
+        <input name="last" type="text">
+      </p>
+
+      <p>
+        <input type="submit" value="Submit">
+      </p>
+    </fieldset>
+  </form>
+
+  <form action="php/queryDBExercise.php" method="get">
+
+    <fieldset>
+      <legend>What Exercises should be done by a particular member and what is his/her weight
+        status
+      </legend>
+
+      <p>
+        <label>Member's id: </label>
+        <input name="id" type="text">
+      </p>
+
+      <p>
+        <input type="submit" value="Submit">
+      </p>
+    </fieldset>
+  </form>
+
+
+</div>
+<!-- end container -->
+
+<!-- ==== START PAGE FOOTER ==== -->
+<footer role="contentinfo" class="footer">
+  <p class="legal1">
+    <small>© 2015 iFit. All Rights Reserved. - Photos used under Creative Commons from
+      fringedbenefit, RAWOPTIX, osseous
+    </small>
+  </p>
+</footer>
+<!-- end page footer -->
 
 </div> <!-- end page -->
 

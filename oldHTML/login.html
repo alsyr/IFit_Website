@@ -1,17 +1,20 @@
-<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="UTF-8">
-<title>LogIn | iFit - Our Mission: Your Health</title>
-<link rel="stylesheet" href="css/iFitBasic.css">
-<link rel="stylesheet" href="css/jquery-ui.min.css">
-<style type="text/css">a {text-decoration: none}</style>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-<script>
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <title>LogIn | iFit - Our Mission: Your Health</title>
+  <link rel="stylesheet" href="css/iFitBasic.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <style type="text/css">a {text-decoration: none}</style>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script>
 $(function() {
 	$( "#datepicker" ).datepicker();
 });
-</script>
-<script type = "text/javascript">
+
+  </script>
+  <script type="text/javascript">
 function validate()
 {
 	firstName  = document.getElementById("firstName").value;
@@ -48,93 +51,103 @@ function validate()
 		alert("Congratulation!!!\nYou made it!!!");
 	}
 }
-</script>
+
+  </script>
 </head>
 
 <body>
-	<div class="container clearfix">
+<div class="container clearfix">
 
-		<div class="backBanner">
-			<header class="masthead" role="banner">
-				<p class="logo"><img src="./images_files/iFit Logo Banner.png"></p>
-			</header>
-		</div> <!-- end backgroundBanner -->
-		
-		<div class="banner">
-			<div class="inBanner">
-				<!-- ==== START MASTHEAD ==== -->
-				<header class="masthead" role="banner">
-					<p class="logo"><a href="home.html"><img src="./images_files/iFit Logo Banner.png"></a></p>
+  <div class="backBanner">
+    <header class="masthead" role="banner">
+      <p class="logo"><img src="./images_files/iFit Logo Banner.png"></p>
+    </header>
+  </div> <!-- end backgroundBanner -->
 
-					<nav role="navigation">
-						<ul class="nav-main">
-							<li><a href="home.html">Home</a></li>
-							<li><a href="login.html" class="current-page">Log In</a></li>
-							<li><a href="programs.html">Programs</a></li>
-							<li><a href="rates.html">Rates</a></li>
-							<li><a href="trainers.html">Our Trainers</a></li>
-							<li><a href="about.html">About</a></li>
-						</ul>
-					</nav>
-				</header>
-			</div> <!-- end InBanner -->
-		</div> <!-- end banner -->
+  <div class="banner">
+    <div class="inBanner">
+      <!-- ==== START MASTHEAD ==== -->
+      <header class="masthead" role="banner">
+        <p class="logo"><a href="home.html"><img src="./images_files/iFit Logo Banner.png"></a></p>
 
-
-		<form action="" method="" action="" onsubmit="return validate(this)">
-			<fieldset>
-				<legend>Adhesion</legend>
-				<p>
-					<label>Title</label>
-					<select name="title">
-						<option value="mister">Mister</option>
-						<option value="madam">Madam</option>
-						<option value="miss">Miss</option>
-					</select>
-				</p>
-				<p>
-					<label>First name:</label>
-					<input name="firstName" type="text" id="firstName">
-				</p>
-				<p>
-					<label>Last name:</label>
-					<input name="lastName" type="text" id="lastName">
-				</p>
-				<p>
-					<label for="date">Date of Birth</label>
-					<input type="text"
-					id = "datepicker" />
-				</p>
-				<p>
-					<label>Are you an actual member?</label>
-					<input type="radio" name="isMember" value="memYes" checked>Yes
-					<input type="radio" name="isMember" value="memNo">No
-				</p>
-				<p>
-					<label>Phone Number:</label>
-					<input name="phoneNumber" type="text" value = "ddd ddd dddd" id = "phone" />
-				</p>
-				<p>
-					<label>Email:</label>
-					<input name="email" type="text" value = "xxxxx@xxxxx.xxx" id = "email" />
-				</p>
-				<button type="button" onclick = "validate()">
-					Submit
-				</button>
+        <nav role="navigation">
+          <ul class="nav-main">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="login.html" class="current-page">Log In</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="rates.html">Rates</a></li>
+            <li><a href="trainers.html">Our Trainers</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div> <!-- end InBanner -->
+  </div> <!-- end banner -->
 
 
-			</fieldset>
-		</form>
+  <form action="" method="" action="" onsubmit="return validate(this)">
+    <fieldset>
+      <legend>Adhesion</legend>
+      <p>
+        <label>Title</label>
+        <select name="title">
+          <option value="mister">Mister</option>
+          <option value="madam">Madam</option>
+          <option value="miss">Miss</option>
+        </select>
+      </p>
+      <p>
+        <label>First name:</label>
+        <input name="firstName" type="text" id="firstName">
+      </p>
+
+      <p>
+        <label>Last name:</label>
+        <input name="lastName" type="text" id="lastName">
+      </p>
+
+      <p>
+        <label for="date">Date of Birth</label>
+        <input type="text"
+               id="datepicker"/>
+      </p>
+
+      <p>
+        <label>Are you an actual member?</label>
+        <input type="radio" name="isMember" value="memYes" checked>Yes
+        <input type="radio" name="isMember" value="memNo">No
+      </p>
+
+      <p>
+        <label>Phone Number:</label>
+        <input name="phoneNumber" type="text" value="ddd ddd dddd" id="phone"/>
+      </p>
+
+      <p>
+        <label>Email:</label>
+        <input name="email" type="text" value="xxxxx@xxxxx.xxx" id="email"/>
+      </p>
+      <button type="button" onclick="validate()">
+        Submit
+      </button>
 
 
-	</div>
-	<!-- end container -->
+    </fieldset>
+  </form>
 
-	<!-- ==== START PAGE FOOTER ==== -->
-	<footer role="contentinfo" class="footer">
-		<p class="legal1"><small>© 2015 iFit. All Rights Reserved. - Photos used under Creative Commons from fringedbenefit, RAWOPTIX, osseous</small></p>
-	</footer>
-	<!-- end page footer -->
+
+</div>
+<!-- end container -->
+
+<!-- ==== START PAGE FOOTER ==== -->
+<footer role="contentinfo" class="footer">
+  <p class="legal1">
+    <small>© 2015 iFit. All Rights Reserved. - Photos used under Creative Commons from
+      fringedbenefit, RAWOPTIX, osseous
+    </small>
+  </p>
+</footer>
+<!-- end page footer -->
 
 </div> <!-- end page -->
 
